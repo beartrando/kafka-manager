@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@shared/logger': git+https://github.com/beartrando/logger.git#v1.0.0
+
 importers:
 
   .:
