@@ -1,4 +1,4 @@
-import { Kafka } from 'kafkajs';
+import {Kafka} from 'kafkajs';
 import logger from '@shared/logger';
 
 const sleep = (ms: number) =>
@@ -15,7 +15,8 @@ export async function withAdmin<T>(
     try {
         return await fn(admin);
     } finally {
-        await admin.disconnect().catch(() => {});
+        await admin.disconnect().catch(() => {
+        });
     }
 }
 

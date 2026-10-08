@@ -1,8 +1,8 @@
-import { Consumer, KafkaJSProtocolError } from 'kafkajs';
+import {Consumer, KafkaJSProtocolError} from 'kafkajs';
 import logger from '@shared/logger';
-import { ensureTopic } from './admin';
-import { getKafkaInstance } from './register';
-import { ConsumerConfig, KafkaConfig } from './types';
+import {ensureTopic} from './admin';
+import {getKafkaInstance} from './register';
+import {ConsumerConfig, KafkaConfig} from './types';
 
 const sleep = (ms: number) =>
     new Promise(resolve => setTimeout(resolve, ms));
@@ -60,7 +60,7 @@ export async function createConsumer<T>(
     logger.info(`Consumer started: ${consumerConfig.topic}`);
 
     await consumer.run({
-        eachMessage: async ({ topic, partition, message }) => {
+        eachMessage: async ({topic, partition, message}) => {
             if (!message.value) {
                 return;
             }

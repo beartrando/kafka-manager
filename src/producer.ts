@@ -1,8 +1,8 @@
-import { Partitioners, Producer } from 'kafkajs';
+import {Partitioners, Producer} from 'kafkajs';
 import logger from '@shared/logger';
-import { ensureTopic } from './admin';
-import { getKafkaInstance } from './register';
-import { KafkaConfig } from './types';
+import {ensureTopic} from './admin';
+import {getKafkaInstance} from './register';
+import {KafkaConfig} from './types';
 
 export type KafkaProducer = {
     send(topic: string, message: unknown): Promise<void>;

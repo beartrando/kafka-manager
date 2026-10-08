@@ -17,6 +17,7 @@ pnpm build  # tsc -p tsconfig.json
 1. Commit changes.
 2. Bump `version` in `package.json` (semver).
 3. Tag and push: `git tag v1.0.0 && git push --tags`.
-4. Update consumers (`services/*/package.json`) to the new tag: `git+https://github.com/beartrando/kafka-manager.git#v1.0.0`.
+4. Update consumers (`services/*/package.json`) to the new tag:
+   `git+https://github.com/beartrando/kafka-manager.git#v1.0.0`.
 
 > Packed consumers build the package automatically on `pnpm install` via the `prepare` script.
