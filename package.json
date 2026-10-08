@@ -1,7 +1,7 @@
 {
   "name": "@shared/kafka-manager",
   "version": "1.0.0",
-  "description": "Lenvora shared Kafka producer/consumer manager",
+  "description": "Shared Kafka producer/consumer manager",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
